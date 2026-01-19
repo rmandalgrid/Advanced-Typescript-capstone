@@ -1,0 +1,23 @@
+{
+  "name": "capstone_typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && npx http-server . -p 8080 -o",
+    "dev": "tsc -w & npx live-server --port=8080 --open=/index.html"
+  },
+  "keywords": [],
+  "author": "Roshni Mandal",
+  "license": "ISC",
+  "description": "This is a capstone project for the Typescript course",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "typescript": "^5.0.0"
+  }
+}
